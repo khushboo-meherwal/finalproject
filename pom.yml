@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: html-pod
+    labels:
+        env: testing
+        region: IN
+        app: html
+spec:
+    containers:
+    - name: myhtml-con
+      image: nginx
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: html-svc
+  labels:
+    app: html
+spec:
+  type: NodePort
+  ports:
+  - name: http
+    nodePort: 30002
+    port: 8080
+    targetPort: 8080
+  selector:
+    app: html
+---
