@@ -9,7 +9,7 @@ metadata:
 spec:
     containers:
     - name: myhtml-con
-      image: nginx
+      image: 173129/dockerimage1
 ---
 apiVersion: v1
 kind: Service
