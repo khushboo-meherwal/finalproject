@@ -5,12 +5,39 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Welcome</title>
+<style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.container{
+text-align: center;
+border: 7px solid red;
+width: 300px;
+height: 450px;
+padding-top: 100px;
+}
+.title{
+text-align: center;
+padding-top: 100px;
+font-size: 30px;
+}
+</style>
 </head>
 <body>
+	<div class="title">Welcome to my site</div>
 	<table align="center">
-		<tr>
-			<td><a href="login">Login</a></td>
-			<td><a href="register">Register</a></td>
+		<tr class="container">
+			<td><a href="login" class="button">Login</a></td>
+			<td><a href="register" class="button">Register</a></td>
 		</tr>
 	</table>
 </body>
