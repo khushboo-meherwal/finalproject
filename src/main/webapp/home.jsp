@@ -33,7 +33,7 @@ font-size: 30px;
 </style>
 </head>
 <body>
-	<div class="title">Welcome to khushboo site</div>
+	<div class="title">Welcome to khushboo</div>
 	<table align="center">
 		<tr class="container">
 			<td><a href="login" class="button">Login</a></td>
